@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script th:src="@{jquery-1.11.1.min.js}"></script>
+    <script>
+        $.ajax({url:"/json",data:{"dadfaf":"adf","dafdaf":"daf"},
+            contentType:"application/json",type:"post"}
+        )
+    </script>
+</head>
+<body>
+    <form action="/json"  method="post">
+        <input name="a">
+        <input name="b">
+        <input name="c">
+        <input name="d">
+        <input type="submit">
+    </form>
+</body>
+</html>
